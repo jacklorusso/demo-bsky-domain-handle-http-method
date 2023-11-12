@@ -1,5 +1,8 @@
 # Demo: verify a domain handle on Bluesky via the HTTP/non-DNS method with Astro
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/171b7258-572c-4132-90f4-9d45c91c9550/deploy-status)](https://app.netlify.com/sites/demo-bsky-domain-handle/deploys)
+
+
 ## 🚀 Do It Yourself
 
 If you clone or fork this repo, inside of your project you'll see the following folders and files:
