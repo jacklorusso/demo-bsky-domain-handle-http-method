@@ -1,8 +1,8 @@
 # Demo: verify a domain handle on Bluesky via the HTTP/non-DNS method with Astro
 
-## 🚀 Project Structure
+## 🚀 Do It Yourself
 
-Inside of your Astro project, you'll see the following folders and files:
+If you clone or fork this repo, inside of your project you'll see the following folders and files:
 
 ```text
 /
@@ -16,7 +16,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ```
 
 If you run the build and navigate to `/.well-known/atproto-did` you'll be served plain text that reads `did:plc:yourDIDhere`. This is achieved with an
-[Astro static file endpoint](https://docs.astro.build/en/core-concepts/endpoints/#server-endpoints-api-routes)
+[Astro static file endpoint](https://docs.astro.build/en/core-concepts/endpoints/#server-endpoints-api-routes).
 
 ```typescript
 import type { APIRoute } from "astro";
@@ -41,6 +41,10 @@ For more information read ['How to set your domain as your handle'](https://blue
 Thanks! —
 [@jacklorusso.com](https://bsky.app/profile/jacklorusso.com)
 
+
+---
+
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -56,4 +60,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [the Astro documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [the Astro documentation](https://docs.astro.build).
