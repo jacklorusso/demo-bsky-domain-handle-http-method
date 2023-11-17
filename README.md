@@ -35,9 +35,7 @@ build the site and deploy it somewhere (I like [Netlify](https://www.netlify.com
 This demo might be useful if you don't have access easy access to the DNS
 records of your site or subdomain. You may not even want to maintain a
 website there, you can just use this to bootstrap the domain
-authentication! For example, my bot project [@helveticabot.jacklorusso.com](https://bsky.app/profile/helveticabot.jacklorusso.com) is on a subdomain of my website, but doesn't really need a web presence; I
-just used this approach as a little workaround because I couldn't figure
-out how to use the DNS method with subdomains on Netlify.
+authentication! For example, my bot project [@helveticabot.jacklorusso.com](https://bsky.app/profile/helveticabot.jacklorusso.com) is on a subdomain of my website, but doesn't really need a web presence.
 
 For more information read ['How to set your domain as your handle'](https://blueskyweb.xyz/blog/4-28-2023-domain-handle-tutorial) on the Bluesky blog.
 
