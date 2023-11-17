@@ -2,6 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/171b7258-572c-4132-90f4-9d45c91c9550/deploy-status)](https://app.netlify.com/sites/demo-bsky-domain-handle/deploys)
 
+Read my [blog about this](https://jacklorusso.com/posts/demo-bsky-domain-handle-http-method/)
 
 ## 🚀 Do It Yourself
 
@@ -42,9 +43,7 @@ For more information read ['How to set your domain as your handle'](https://blue
 Thanks! —
 [@jacklorusso.com](https://bsky.app/profile/jacklorusso.com)
 
-
 ---
-
 
 ## 🧞 Commands
 
