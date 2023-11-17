@@ -1,49 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Demo: Bluesky domain handle HTTP method</title>
-        <style>
-            body {
-                font-size: 18px;
-                max-width: 33em;
-                margin: 2em auto;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-                    "Segoe UI Emoji", "Segoe UI Symbol";
-            }
+  <head>
+    <meta charset="utf-8" />
+    <title>Demo: Bluesky domain handle HTTP method</title>
+    <style>
+      body {
+        font-size: 18px;
+        max-width: 65ch;
+        margin: 0 auto;
+        padding: 4em 2em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+      }
 
-            p {
-                line-height: 1.7;
-            }
+      p {
+        line-height: 1.7;
+      }
 
-            a {
-                color: #e41170;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>
-            Demo: verify a domain handle on Bluesky via the HTTP/non-DNS method
-            with Astro
-        </h1>
-        <p>
-            <a
-                href="https://github.com/jacklorusso/demo-bsky-domain-handle-http-method"
-                >View on Github</a
-            >
-        </p>
-        <p>
-            If you navigate to
-            <a href="/.well-known/atproto-did">/.well-known/atproto-did</a>
-            you'll be served plain text that reads
-            <code>did:plc:yourDIDhere</code>. This is achieved with an
-            <a
-                href="https://docs.astro.build/en/core-concepts/endpoints/#server-endpoints-api-routes"
-                >Astro static file endpoint</a
-            >.
-        </p>
-        <pre>
+      a {
+        color: #e41170;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Demo: verify a domain handle on Bluesky via the HTTP/non-DNS method with
+      Astro
+    </h1>
+    <p>
+      <a
+        href="https://github.com/jacklorusso/demo-bsky-domain-handle-http-method"
+        >View on Github</a
+      >
+      or
+      <a
+        href="https://jacklorusso.com/posts/demo-bsky-domain-handle-http-method/"
+        >read the blog</a
+      >
+    </p>
+    <p>
+      If you navigate to
+      <a href="/.well-known/atproto-did">/.well-known/atproto-did</a>
+      you'll be served plain text that reads
+      <code>did:plc:yourDIDhere</code>. This is achieved with an
+      <a
+        href="https://docs.astro.build/en/core-concepts/endpoints/#static-file-endpoints"
+        >Astro static file endpoint</a
+      >.
+    </p>
+    <pre>
             <code>
 import type { APIRoute } from "astro";
 
@@ -52,37 +58,33 @@ export const GET: APIRoute = () => {
 };
             </code>
         </pre>
-        <p>
-            Update the
-            <code>src/pages/.well-known/atproto-did.ts</code> file with your own
-            DID, build the site and deploy it somewhere (I like
-            <a href="https://www.netlify.com">Netlify</a>). Then you'll be able
-            to verify your custom domain handle on Bluesky with the HTTP method!
-        </p>
-        <p>
-            This demo might be useful if you don't have access easy access to
-            the DNS records of your site or subdomain. You may not even want to
-            maintain a website there, you can just use this to bootstrap the
-            domain authentication! For example, my bot project
-            <a href="https://bsky.app/profile/helveticabot.jacklorusso.com"
-                >@helveticabot.jacklorusso.com</a
-            >
-            is on a subdomain of my website, but doesn't really need a web
-            presence.
-        </p>
-        <p>
-            For more information read
-            <a
-                href="https://blueskyweb.xyz/blog/4-28-2023-domain-handle-tutorial"
-                >'How to set your domain as your handle'</a
-            >
-            on the Bluesky blog.
-        </p>
-        <p>
-            —
-            <a href="https://bsky.app/profile/jacklorusso.com"
-                >@jacklorusso.com</a
-            >
-        </p>
-    </body>
+    <p>
+      Update the
+      <code>src/pages/.well-known/atproto-did.ts</code> file with your own DID,
+      build the site and deploy it somewhere (I like
+      <a href="https://www.netlify.com">Netlify</a>). Then you'll be able to
+      verify your custom domain handle on Bluesky with the HTTP method!
+    </p>
+    <p>
+      This demo might be useful if you don't have access easy access to the DNS
+      records of your site or subdomain. You may not even want to maintain a
+      website there, you can just use this to bootstrap the domain
+      authentication! For example, my bot project
+      <a href="https://bsky.app/profile/helveticabot.jacklorusso.com"
+        >@helveticabot.jacklorusso.com</a
+      >
+      is on a subdomain of my website, but doesn't really need a web presence.
+    </p>
+    <p>
+      For more information read
+      <a href="https://blueskyweb.xyz/blog/4-28-2023-domain-handle-tutorial"
+        >'How to set your domain as your handle'</a
+      >
+      on the Bluesky blog.
+    </p>
+    <p>
+      —
+      <a href="https://bsky.app/profile/jacklorusso.com">@jacklorusso.com</a>
+    </p>
+  </body>
 </html>
